@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>My Form</title>
+	</head>
+	<body>
+		<nav>
+			<a href="#home">Home</a>
+			<a href="#images">Images</a>
+			<a href="#form">Form</a>
+			<a href="#videos">Relax</a>
+			<a href="#contact">Contact</a>
+		</nav>
+		<div id="home">
+			<h1>Welcome to Drunkin' Donuts</h1>
+			<p>It's not everyday you walk into a bar that's selling<br>
+			coffee and donuts but let me assure you that we have some<br>
+			of the best donuts in the state and also some of the best<br>
+			sourced ground coffee locally, plus relax and take the edge off with our signature cocktails.
+			</p>
+		</div>
+		<section>
+			<div id="gallery">
+				<h1>Gallery</h1>
+				<div>
+					<!--PHOTO CONTAINER 1 -->
+					<span>
+						<img src="html_project/coffee_cup.png" alt="Image of a coffee cup" width="400" height="400">
+						<span>
+							<h3>Click to enlarge</h3>
+							<p>Welcome to Drunkin' Donuts, the only place that sells donuts and alcoholic drinks!</p>
+						</span>
+					</span>
+					<!-- END PHOTO CONTAINER 1 -->
+					
+					<!--PHOTO CONTAINER 2 -->
+					<span>
+						<img src="html_project/coffee_beans.jpg" alt="Image of coffee beans" width="400" height="400">
+						<span>
+							<h3>Click to enlarge</h3>
+							<p>From bean to cup, learn about how we source our coffee.</p>
+						</span>
+					</span>
+					<!-- END PHOTO CONTAINER 2 -->
+					
+					<!--PHOTO CONTAINER 3 -->
+					<span>
+						<img src="html_project/chai_frapp.jpg" alt="Image of a chai frappuccino" width="400" height="400">
+						<span>
+							<h3>Click to enlarge</h3>
+							<p>Check out all the wonderful drinks we have on our menu, including our signature chai frappuccino!</p>
+						</span>
+					</span>
+					<!-- END PHOTO CONTAINER 3 -->
+				</div>
+			</div>
+		</section>
+		<form action="" method="POST" id="form">
+			<fieldset>
+				<legend>Tell us about yourself</legend>
+				<div>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required>
+				</div>
+				<div>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required>
+				</div>
+				<div>
+					<label for="message">How do you like your coffee made?:</label>
+					<textarea id="message" name="message" rows="4" required></textarea>
+				</div>
+				<input type="submit" value="Submit">
+			</fieldset>
+		</form>
+		<div id="videos">
+			<h3>Wind down with some relaxing music</h3>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/LjxsBAaCYmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>
+		<footer id="contact">
+			<h4>Contact Us:</h4>
+			<p>901-384-9374</p>
+			<p>742 Evergreen Terrace</p>
+			<p>erfanbro46@gmail.com</p>
+		</footer>
+	</body>
+</html>
