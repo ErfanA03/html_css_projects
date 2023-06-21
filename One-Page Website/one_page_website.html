@@ -1,37 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Underground Train Station</title>
-</head>
-<body>
-    <!--NAV-->
-    <nav class="menu-container">
-        <ul class="menu">
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#gallery">GALLERY</a></li>
-            <li><a href="#contact">RESERVATIONS</a></li>
-            <li><a href="#footer">ABOUT US</a></li>
-        </ul>
-    </nav>
-    <!--HOME PAGE-->
-    <div class="home">
-        <h1></h1>
-        <p></p>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Underground Train Station</title>
+    </head>
+    <body>
+        <!--NAV-->
+        <nav class="menu-container">
+            <ul class="menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#contact">RESERVATIONS</a></li>
+                <li><a href="#footer">ABOUT US</a></li>
+            </ul>
+        </nav>
+        <!--END NAV-->
 
-    <!--GALLERY-->
-    <div class="gallery">
+        <!--HOME PAGE-->
+        <div id="home">
+            <h1>Welcome to all there is to know about the Civil War</h1>
+            <p>The Civil War, also known as the American Civil War,
+            <br>was a major armed conflict that took place in the United States
+            <br>from 1861 to 1865. It was fought primarily between the northern states,
+            <br>known as the Union, and the southern states, known as the Confederacy.
+            <br>The underlying cause of the Civil War was the issue of slavery, which
+            <br>had long been a contentious issue in the United States. The southern states
+            <br>relied heavily on slave labor for their agrarian economy, while the northern states 
+            <br>had largely abolished slavery and were moving towards industrialization.
+            </p>
+        </div>
+        <!--END HOME PAGE-->
 
-    </div>
-    <!--CONTACT-->
-    <form class="contact">
+        <!--GALLERY-->
+        <div id="gallery">
+            <img src="./images/civil-war.jpg" alt="Image of the civil war">
+            <img src="./images/civil-war2.jpg" alt="Image of the civil war">
+            <img src="./images/civil-war3.jpeg" alt="Image of the civil war">
+        </div>
+        <!--END GALLERY-->
 
-    </form>
-    <!--VIDEO-->
+        <!--CONTACT-->
+        <div id="contact">
+            <h2>Sign up for newsletter!</h2>
+            <form action="" method="post">
+                <input class="rsvp" type="text" name="first_name" placeholder="First Name" required>
+                <input class="rsvp" type="text" name="last_name" placeholder="Last Name" required>
+                <input class="rsvp" type="email" name="email_address" placeholder="Email Address" required>
+                <input class="rsvp" type="tel" name="phone_number" placeholder="Phone Number" required>
+                <input class="rsvp" type="checkbox" name="terms&cond" placeholder="Terms and Conditions" required>
+                <div class="submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <!--END CONTACT-->
 
-    <!--FOOTER-->
+        <!--VIDEO-->
+        <h3>Here is part one of a documentary about the Civil War</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GlBNy1iuHEY" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!--END VIDEO-->
 
-</body>
+        <!--FOOTER-->
+        <div id="footer">
+            www.civilwarwiki.com &nbsp;|&nbsp; &copy; 2023
+        </div>
+        <!--END FOOTER-->
+
+    </body>
 </html>
