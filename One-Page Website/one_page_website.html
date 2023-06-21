@@ -3,31 +3,39 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Underground Train Station</title>
+        <title>Civil War Wiki</title>
+        <link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
     </head>
     <body>
+
         <!--NAV-->
-        <nav class="menu-container">
-            <ul class="menu">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#gallery">GALLERY</a></li>
-                <li><a href="#contact">RESERVATIONS</a></li>
-                <li><a href="#footer">ABOUT US</a></li>
-            </ul>
+        <nav id="nav">
+            <div class="nav-border">
+                <a href="#home">HOME</a>
+            </div>
+            <div class="nav-border">
+                <a href="#gallery">GALLERY</a>
+            </div>
+            <div class="nav-border">
+            <a href="#contact">RESERVATIONS</a>
+            </div>
+            <div class="nav-border">
+            <a href="#footer">ABOUT US</a>
+            </div>
         </nav>
         <!--END NAV-->
 
         <!--HOME PAGE-->
         <div id="home">
-            <h1>Welcome to all there is to know about the Civil War</h1>
+            <h1>All there is to know about the Civil War</h1>
             <p>The Civil War, also known as the American Civil War,
-            <br>was a major armed conflict that took place in the United States
-            <br>from 1861 to 1865. It was fought primarily between the northern states,
-            <br>known as the Union, and the southern states, known as the Confederacy.
-            <br>The underlying cause of the Civil War was the issue of slavery, which
-            <br>had long been a contentious issue in the United States. The southern states
-            <br>relied heavily on slave labor for their agrarian economy, while the northern states 
-            <br>had largely abolished slavery and were moving towards industrialization.
+                <br>was a major armed conflict that took place in the United States
+                <br>from 1861 to 1865. It was fought primarily between the northern states,
+                <br>known as the Union, and the southern states, known as the Confederacy.
+                <br>The underlying cause of the Civil War was the issue of slavery, which
+                <br>had long been a contentious issue in the United States. The southern states
+                <br>relied heavily on slave labor for their agrarian economy, while the northern states 
+                <br>had largely abolished slavery and were moving towards industrialization.
             </p>
         </div>
         <!--END HOME PAGE-->
@@ -35,37 +43,52 @@
         <!--GALLERY-->
         <div id="gallery">
             <img src="./images/civil-war.jpg" alt="Image of the civil war">
-            <img src="./images/civil-war2.jpg" alt="Image of the civil war">
+            <img src="./images/civil-war4.jpg" alt="Image of the civil war">
             <img src="./images/civil-war3.jpeg" alt="Image of the civil war">
+            <img src="./images/civil-war2.jpg" alt="Image of the civil war">
         </div>
         <!--END GALLERY-->
 
         <!--CONTACT-->
-        <div id="contact">
-            <h2>Sign up for newsletter!</h2>
-            <form action="" method="post">
-                <input class="rsvp" type="text" name="first_name" placeholder="First Name" required>
-                <input class="rsvp" type="text" name="last_name" placeholder="Last Name" required>
-                <input class="rsvp" type="email" name="email_address" placeholder="Email Address" required>
-                <input class="rsvp" type="tel" name="phone_number" placeholder="Phone Number" required>
-                <input class="rsvp" type="checkbox" name="terms&cond" placeholder="Terms and Conditions" required>
-                <div class="submit">
-                    <input type="submit" value="Submit">
-                </div>
-            </form>
+        <div class="form-wrap">
+            <h2>Sign up for our daily newsletter!</h2>
+            <div id="contact">
+                <form action="" method="post">
+                    <fieldset>
+                        <legend>Enter Your Contact Information Below:</legend>
+                        <input class="rsvp" type="text" name="first_name" placeholder="First Name" required>
+                        <input class="rsvp" type="text" name="last_name" placeholder="Last Name" required>
+                        <input class="rsvp" type="email" name="email_address" placeholder="Email Address" required>
+                        <input class="rsvp" type="tel" name="phone_number" placeholder="Phone Number" required>
+                        <div class="terms-spacer">
+                            <input id="terms&conds" type="checkbox" name="checked_terms" required>
+                            <label for="terms&conds">Terms and Conditions</label>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </div>
         <!--END CONTACT-->
 
         <!--VIDEO-->
-        <h3>Here is part one of a documentary about the Civil War</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/GlBNy1iuHEY" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-        encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="video-wrap">
+            <div class="video">
+                <h3>Here is part one of a documentary about the Civil War</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GlBNy1iuHEY" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
         <!--END VIDEO-->
 
         <!--FOOTER-->
         <div id="footer">
-            www.civilwarwiki.com &nbsp;|&nbsp; &copy; 2023
+            <p>
+                <a href="#home">www.civilwarwiki.com &nbsp;|&nbsp; &copy; 2023</a>
+            </p>
         </div>
         <!--END FOOTER-->
 
