@@ -1,0 +1,144 @@
+/* GENERAL STYLES */
+* {
+    box-sizing: border-box;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* NAV STYLES */
+.navbar {
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    color: red;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* DARTH VADER IMAGE STYLES */
+#darth-vader {
+    margin: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    filter: drop-shadow(8px 8px 10px black);
+    border: 2px solid red;
+    border-radius: 70px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered-bottom {
+    position: absolute;
+    font-weight: bold;
+    font-size: 20px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* TABLE STYLES */
+table, th, td {
+    border: 1px solid;
+}
+
+th, td {
+    text-align: center;
+    padding: 20px;
+}
+
+#top-row {
+    background-color: black;
+    color: red;
+}
+
+/* VID STYLES */
+#vid {
+    width: 610px;
+    margin: 10px;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+}
+  
+.container:hover .overlay {
+    opacity: 1;
+}
+  
+.text {
+    color: red;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* COLUMN STYLES */
+.row {
+    margin-top: 7px;
+}
+
+.column {
+    color: red;
+    background-color: black;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#jedi:hover {
+    background-color: green;
+    color: white;
+}
+
+#sith:hover {
+    background-color: red;
+    color: black;
+}
